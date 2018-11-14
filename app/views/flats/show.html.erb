@@ -1,0 +1,16 @@
+<div>
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+</div>
+
+<div>
+  <h4>A bit more about this flat...</h4>
+  <p><%= @flat.address %></p>
+</div>
+
+<div>
+  <h4>Details</h4>
+  <p><%= "🧑🏻#{@flat.number_of_guests}" %><%= "  💰#{@flat.price_per_night}" %></p>
+</div>
+
+<%= link_to "Back", flats_path  %>
